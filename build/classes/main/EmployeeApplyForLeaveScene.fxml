@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0e152e;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.EmployeeApplyForLeaveController">
+   <children>
+      <Label layoutX="224.0" layoutY="56.0" text="Apply for Leave" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="491.0" layoutY="58.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="23.0" prefWidth="59.0" style="-fx-background-color: #f68827;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="startingDate" layoutX="157.0" layoutY="123.0" prefHeight="25.0" prefWidth="167.0" />
+      <TextField fx:id="endingDate" layoutX="157.0" layoutY="163.0" prefHeight="25.0" prefWidth="167.0" />
+      <TextArea fx:id="reasonTaskArea" layoutX="157.0" layoutY="206.0" prefHeight="114.0" prefWidth="363.0" />
+      <Button layoutX="460.0" layoutY="331.0" mnemonicParsing="false" onAction="#applyForLeaveButtonOnClick" prefHeight="23.0" prefWidth="59.0" style="-fx-background-color: #f68827;" text="Apply" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="78.0" layoutY="126.0" text="From:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="166.0" text="To:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="206.0" text="Reason:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

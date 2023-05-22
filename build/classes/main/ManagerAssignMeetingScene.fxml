@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0e152e;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="main.ManagerAssignMeetingSceneController">
+   <children>
+      <Label layoutX="177.0" layoutY="57.0" text="New Meeting Schedule" textAlignment="JUSTIFY" textFill="#f68827">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dateTextField" layoutX="144.0" layoutY="126.0" prefHeight="25.0" prefWidth="127.0" />
+      <Label layoutX="90.0" layoutY="128.0" text="Date:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="221.0" text="Topic:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="timeTextField" layoutX="143.0" layoutY="171.0" prefHeight="25.0" prefWidth="127.0" />
+      <Label layoutX="88.0" layoutY="174.0" text="Time:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="363.0" layoutY="316.0" mnemonicParsing="false" onAction="#saveButtonOnClick" prefHeight="27.0" prefWidth="73.0" style="-fx-background-color: #f68827;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="447.0" layoutY="316.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #f68827;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="topicTextArea" layoutX="143.0" layoutY="221.0" prefHeight="81.0" prefWidth="368.0" />
+   </children>
+</AnchorPane>
